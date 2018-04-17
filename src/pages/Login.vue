@@ -5,6 +5,7 @@
         <form action="">
             <input type="email" placeholder="E-mail" required>
             <input type="password" placeholder="Senha" required>
+            <label for="esqueceu-senha"><input type="checkbox" name="esqueceu-senha" id="esqueceu-senha"> Esqueceu sua senha? </label>
             <input type="submit" value="Entrar">
         </form>
     </div>
@@ -47,5 +48,13 @@ export default {
     }
     form input[type=submit]:hover{
         background-color: #27ae60;
+    }
+    form label{
+        font-size: 14px;
+        text-align: left;
+    }
+    form input[type=checkbox]{
+        vertical-align: middle;
+        margin-right: 10px;
     }
 </style>
